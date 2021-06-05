@@ -20,11 +20,10 @@ const isAuth = require('./middleware/is-auth');
 const User = require("./models/user");
 //akashdubey1999
 
-// const MONGODB_URI =
-// 	`mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.l7zs9.mongodb.net/${process.env.MONGO_DEFAULT_DATABASE}?retryWrites=true&w=majority`;
 const MONGODB_URI =
-	"mongodb+srv://akash:akash@cluster0.l7zs9.mongodb.net/Project0?retryWrites=true&w=majority";
-console.log(MONGODB_URI);
+	`mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.l7zs9.mongodb.net/${process.env.MONGO_DEFAULT_DATABASE}?retryWrites=true&w=majority`;
+// const MONGODB_URI =
+// 	"mongodb+srv://akash:akash@cluster0.l7zs9.mongodb.net/Project0?retryWrites=true&w=majority";
 
 const app = express();
 const store = new MongoDBStore({
